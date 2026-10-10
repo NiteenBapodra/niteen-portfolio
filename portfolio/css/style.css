@@ -1,0 +1,389 @@
+/* ENGINEERING OS CONCEPT */
+:root {
+    /* Sophisticated Dark Palette */
+    --base-dark: #07090D;
+    --surface-dark: #0B0F14;
+    --surface-light: #10151C;
+    --accent: #00E5FF; /* Electric Cyan */
+    --secondary-accent: #8E24AA; /* Violet/Indigo */
+    
+    --text-primary: #F0F4F8;
+    --text-muted: #8B9BB4;
+    
+    --border-color: rgba(139, 155, 180, 0.15);
+}
+
+body {
+    background-color: var(--base-dark);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.bg-body { background-color: var(--base-dark) !important; }
+.bg-surface { background-color: var(--surface-light) !important; }
+.bg-darker { background-color: var(--surface-dark) !important; }
+
+.text-accent { color: var(--accent) !important; }
+.text-secondary-accent { color: var(--secondary-accent) !important; }
+.text-muted { color: var(--text-muted) !important; }
+
+.border-dark { border-color: var(--border-color) !important; }
+.border-accent { border-color: var(--accent) !important; }
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hover-accent:hover { color: var(--accent) !important; }
+
+/* Navigation */
+.floating-nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(11, 15, 20, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-nav.scrolled {
+    top: 10px;
+    width: 80%;
+    background: rgba(11, 15, 20, 0.9);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-brand {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-item {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.05em;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: var(--accent);
+}
+
+.nav-status {
+    font-size: 0.85rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mobile-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+/* Base Sections */
+.section-spacing {
+    padding: 8rem 0;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+}
+
+/* Backgrounds */
+.engineering-grid-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 50px 50px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    z-index: 0;
+    pointer-events: none;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+}
+
+/* Typography Overrides */
+.hero-headline {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.hero-subtext {
+    font-size: 1.25rem;
+    max-width: 600px;
+}
+
+/* Buttons */
+.btn-engineering {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    background: var(--text-primary);
+    color: var(--base-dark);
+    text-decoration: none;
+    border: 1px solid var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-engineering:hover {
+    background: transparent;
+    color: var(--text-primary);
+}
+
+.btn-engineering.outline {
+    background: transparent;
+    color: var(--text-primary);
+}
+
+.btn-engineering.outline:hover {
+    background: var(--text-primary);
+    color: var(--base-dark);
+}
+
+/* Engineering Profile Panel */
+.profile-panel {
+    background: var(--surface-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+.panel-header {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.panel-body {
+    font-size: 0.9rem;
+}
+
+.system-bar {
+    width: 150px;
+    height: 4px;
+    background: var(--surface-light);
+}
+
+.system-bar .fill {
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+/* Engineering Stack */
+.stack-domain {
+    transition: background-color 0.3s;
+}
+
+.stack-domain:hover {
+    background-color: var(--surface-dark);
+}
+
+.tech-list {
+    margin: 0;
+}
+
+.tech-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    transition: all 0.3s;
+    cursor: default;
+    background: var(--surface-light);
+}
+
+.tech-tag:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Vertical Timeline */
+.vertical-timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    width: 1px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 5px;
+    left: -3rem;
+    width: 15px;
+    height: 15px;
+    background: var(--base-dark);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+.timeline-marker.end {
+    border-color: var(--text-muted);
+    box-shadow: none;
+}
+
+.timeline-panel {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.timeline-panel h4 {
+    transition: color 0.3s;
+}
+
+.timeline-panel:hover h4 {
+    color: var(--accent);
+}
+
+.tech-mini-list span {
+    margin-right: 0.5rem;
+}
+.tech-mini-list span:last-child {
+    margin-right: 0;
+}
+
+/* System Panels */
+.system-panel {
+    background: var(--surface-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s;
+}
+
+.system-panel:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 155, 180, 0.3);
+}
+
+/* Architecture Nodes */
+.arch-nodes {
+    padding: 2rem 0;
+}
+
+.arch-node {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--border-color);
+    background: var(--base-dark);
+    color: var(--text-muted);
+    transition: all 0.3s;
+    cursor: crosshair;
+    text-align: center;
+}
+
+.arch-node:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.arch-node.highlight {
+    border-color: var(--secondary-accent);
+    color: var(--text-primary);
+}
+
+.arch-node.primary {
+    border-color: var(--accent);
+    color: var(--text-primary);
+}
+
+/* Pipeline Flow */
+.pipeline-step {
+    flex: 1;
+    min-width: 80px;
+    padding: 1rem 0;
+}
+.step-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Forms */
+.contact-link {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--accent);
+}
+
+.engineering-input {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    border-radius: 0 !important;
+    color: var(--text-primary) !important;
+    padding: 0.5rem 0 !important;
+}
+
+.engineering-input:focus {
+    box-shadow: none !important;
+    border-color: var(--accent) !important;
+}
+
+/* Modal overrides */
+.modal-fullscreen .modal-content {
+    border: none;
+}

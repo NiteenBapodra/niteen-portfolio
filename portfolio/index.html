@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niteen Bapodra | Java Full Stack Developer</title>
+    <meta name="description" content="Java Full Stack Developer specializing in Java, Spring Boot, Microservices, REST APIs, enterprise applications, security and AI-assisted systems.">
+    
+    <!-- Open Graph & Twitter -->
+    <meta property="og:title" content="Niteen Bapodra | Java Full Stack Developer">
+    <meta property="og:description" content="Java Full Stack Developer specializing in Java, Spring Boot, Microservices, REST APIs, enterprise applications, security and AI-assisted systems.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="canonical" href="https://niteen.dev">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true">
+
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top premium-nav">
+        <div class="container-fluid px-4 px-xl-5">
+            <a class="navbar-brand d-flex flex-column" href="#home">
+                <span class="fw-bold fs-5 text-white brand-name">NITEEN BAPODRA</span>
+                <span class="brand-subtitle text-accent font-mono small">JAVA FULL STACK DEVELOPER</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+                <i class="bi bi-list text-white fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav gap-2 font-mono small">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stack">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#architecture">Architecture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#security">Security</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="d-none d-lg-flex align-items-center gap-3">
+                <button id="themeToggle" class="btn btn-link text-white p-0 border-0 text-decoration-none">
+                    <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+                    <i class="bi bi-sun-fill theme-icon-light d-none"></i>
+                </button>
+                <a href="#resume" class="btn btn-accent btn-sm font-mono fw-bold px-3 py-2">RESUME <i class="bi bi-download ms-1"></i></a>
+            </div>
+        </div>
+        <!-- Scroll Progress -->
+        <div class="scroll-progress"><div class="scroll-progress-bar" id="scrollBar"></div></div>
+    </nav>
+
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header border-bottom border-dark">
+            <h5 class="offcanvas-title font-mono text-white">NITEEN.DEV</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav flex-grow-1 font-mono fs-5 gap-3 mt-4">
+                <li class="nav-item"><a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#profile" data-bs-dismiss="offcanvas">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#stack" data-bs-dismiss="offcanvas">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience" data-bs-dismiss="offcanvas">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#architecture" data-bs-dismiss="offcanvas">Architecture</a></li>
+                <li class="nav-item"><a class="nav-link" href="#security" data-bs-dismiss="offcanvas">Security</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 01 HERO -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center position-relative overflow-hidden pt-5">
+        <div class="engineering-bg"></div>
+        <div class="container position-relative z-1 pt-5">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 hero-content fade-in-up">
+                    <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill bg-surface border border-accent-subtle mb-4 shadow-glow">
+                        <span class="status-indicator bg-success blink"></span>
+                        <span class="font-mono small text-white fw-medium">AVAILABLE FOR ENGINEERING OPPORTUNITIES</span>
+                    </div>
+                    
+                    <h1 class="display-4 fw-bolder text-white mb-4 lh-sm">
+                        I build reliable systems,<br>
+                        <span class="text-gradient">secure APIs & enterprise</span><br>
+                        applications.
+                    </h1>
+                    
+                    <p class="fs-5 text-muted mb-5 pe-lg-4 lh-base">
+                        Java Full Stack Developer with 3.5+ years of experience building enterprise applications, secure REST APIs, microservices, integrations and production-ready systems.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 font-mono small">
+                        <a href="#projects" class="btn btn-accent px-4 py-3 fw-bold btn-hover-lift">Explore My Work</a>
+                        <a href="#architecture" class="btn btn-outline-light px-4 py-3 fw-bold btn-hover-lift">View Architecture</a>
+                        <a href="#contact" class="btn btn-outline-secondary px-4 py-3 fw-bold btn-hover-lift border-0">Contact Me</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 hero-visual fade-in-left delay-1">
+                    <!-- Interactive Terminal -->
+                    <div class="terminal-container shadow-lg">
+                        <div class="terminal-header d-flex justify-content-between align-items-center px-3 py-2">
+                            <div class="d-flex gap-2">
+                                <span class="terminal-btn close"></span>
+                                <span class="terminal-btn minimize"></span>
+                                <span class="terminal-btn maximize"></span>
+                            </div>
+                            <span class="font-mono small text-muted">NITEEN@ENGINEERING-OS</span>
+                            <div></div>
+                        </div>
+                        <div class="terminal-body p-4 font-mono text-white fs-6">
+                            <div class="terminal-output mb-3" id="termOutput">
+                                <div class="text-accent mb-2">Welcome to Engineering OS v2.0</div>
+                                <div>Type a command or click below:</div>
+                            </div>
+                            <div class="terminal-input-line d-flex align-items-center mb-4">
+                                <span class="text-success me-2">$</span>
+                                <span class="typing-cursor blink-fast">_</span>
+                            </div>
+                            
+                            <!-- Interactive Command Buttons -->
+                            <div class="d-flex flex-wrap gap-2 terminal-commands mt-auto pt-4 border-top border-dark">
+                                <button class="btn btn-sm btn-terminal" data-cmd="whoami">whoami</button>
+                                <button class="btn btn-sm btn-terminal" data-cmd="stack --core">stack --core</button>
+                                <button class="btn btn-sm btn-terminal" data-cmd="system --status">system --status</button>
+                                <button class="btn btn-sm btn-terminal" data-cmd="clear">clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engineering Metrics -->
+            <div class="row mt-5 pt-5 gy-4 metrics-row fade-in-up delay-2">
+                <div class="col-6 col-md-3">
+                    <div class="metric-box">
+                        <div class="metric-value font-mono text-white fs-2 fw-bold"><span class="counter" data-target="3.5">0</span>+</div>
+                        <div class="metric-label font-mono text-accent small mt-1">YEARS EXPERIENCE</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="metric-box border-start border-dark ps-md-4">
+                        <div class="metric-value font-mono text-white fs-2 fw-bold">JAVA</div>
+                        <div class="metric-label font-mono text-accent small mt-1">PRIMARY BACKEND</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="metric-box border-start border-dark ps-md-4">
+                        <div class="metric-value font-mono text-white fs-2 fw-bold">REST</div>
+                        <div class="metric-label font-mono text-accent small mt-1">API DEVELOPMENT</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="metric-box border-start border-dark ps-md-4">
+                        <div class="metric-value font-mono text-white fs-2 fw-bold"><i class="bi bi-shield-check"></i></div>
+                        <div class="metric-label font-mono text-accent small mt-1">OWASP SECURITY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 ENGINEERING PROFILE -->
+    <section id="profile" class="py-section bg-surface">
+        <div class="container">
+            <div class="section-tag font-mono text-accent mb-3 fade-in-up">01 // ABOUT</div>
+            <h2 class="display-6 fw-bold text-white mb-5 fade-in-up">ENGINEERING PROFILE</h2>
+            
+            <div class="row gy-5 align-items-center">
+                <div class="col-lg-6 pe-lg-5 fade-in-up">
+                    <p class="fs-5 text-muted lh-lg mb-4">
+                        I am a Java Full Stack Developer focused on building enterprise applications using Java, Spring Boot, Microservices, REST APIs and modern frontend technologies.
+                    </p>
+                    <p class="fs-5 text-muted lh-lg mb-4">
+                        My experience includes backend development, frontend integration, database development, application security, enterprise integrations, deployment support, production issue resolution and system optimization.
+                    </p>
+                    <p class="fs-5 text-muted lh-lg">
+                        I have worked with banking APIs, HRMS integrations, LDAP, financial modules, enterprise workflows and production environments.
+                    </p>
+                </div>
+                <div class="col-lg-6 fade-in-left">
+                    <div class="engineering-panel p-4 p-md-5 border border-dark rounded bg-base shadow-lg position-relative overflow-hidden">
+                        <div class="panel-glow"></div>
+                        <h4 class="font-mono text-white mb-4 border-bottom border-dark pb-3 d-flex justify-content-between">
+                            <span>SYSTEM_IDENTITY</span>
+                            <i class="bi bi-cpu text-accent"></i>
+                        </h4>
+                        
+                        <div class="d-flex flex-column gap-3 font-mono small">
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">ROLE:</span>
+                                <span class="text-white">Java Full Stack Developer</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">FOCUS:</span>
+                                <span class="text-white">Enterprise Systems</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">DEPLOYMENT:</span>
+                                <span class="text-white">UAT / Production</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">SECURITY:</span>
+                                <span class="text-white">OWASP Compliant</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-top border-dark">
+                            <div class="font-mono text-muted small mb-3">CURRENT OPERATIONS</div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-surface border border-dark text-white px-3 py-2">Microservices</span>
+                                <span class="badge bg-surface border border-dark text-white px-3 py-2">API Design</span>
+                                <span class="badge bg-surface border border-accent text-accent px-3 py-2">AI Integrations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 ENGINEERING STACK -->
+    <section id="stack" class="py-section bg-base">
+        <div class="container">
+            <div class="section-tag font-mono text-accent mb-3 fade-in-up">02 // TECHNOLOGIES</div>
+            <h2 class="display-6 fw-bold text-white mb-5 fade-in-up">ENGINEERING STACK</h2>
+            
+            <div class="stack-matrix fade-in-up">
+                <!-- Backend -->
+                <div class="stack-row row align-items-center py-4 border-top border-dark">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5 class="font-mono text-white fw-bold m-0"><i class="bi bi-hdd-rack text-accent me-2"></i>Backend</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="d-flex flex-wrap gap-2 tech-badges">
+                            <span class="tech-badge" data-info="Core enterprise logic">Java</span>
+                            <span class="tech-badge" data-info="Application framework">Spring Boot</span>
+                            <span class="tech-badge">Spring MVC</span>
+                            <span class="tech-badge">Spring Security</span>
+                            <span class="tech-badge" data-info="Distributed architecture">Microservices</span>
+                            <span class="tech-badge" data-info="Stateless communication">REST APIs</span>
+                            <span class="tech-badge" data-info="ORM">Hibernate</span>
+                            <span class="tech-badge">JPA</span>
+                            <span class="tech-badge">JDBC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frontend -->
+                <div class="stack-row row align-items-center py-4 border-top border-dark">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5 class="font-mono text-white fw-bold m-0"><i class="bi bi-window-fullscreen text-accent me-2"></i>Frontend</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="d-flex flex-wrap gap-2 tech-badges">
+                            <span class="tech-badge" data-info="Component-based UI">Angular</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">jQuery</span>
+                            <span class="tech-badge">JSP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="stack-row row align-items-center py-4 border-top border-dark">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5 class="font-mono text-white fw-bold m-0"><i class="bi bi-database text-accent me-2"></i>Databases</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="d-flex flex-wrap gap-2 tech-badges">
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge" data-info="Enterprise RDBMS">Oracle 19c</span>
+                            <span class="tech-badge">SQL Server</span>
+                            <span class="tech-badge" data-info="Advanced relational DB">PostgreSQL</span>
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Stored Procedures</span>
+                            <span class="tech-badge">Query Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="stack-row row align-items-center py-4 border-top border-dark">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5 class="font-mono text-white fw-bold m-0"><i class="bi bi-tools text-accent me-2"></i>DevOps / Tools</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="d-flex flex-wrap gap-2 tech-badges">
+                            <span class="tech-badge">Git</span>
+                            <span class="tech-badge">GitHub</span>
+                            <span class="tech-badge">Maven</span>
+                            <span class="tech-badge" data-info="Web server & reverse proxy">NGINX</span>
+                            <span class="tech-badge">Postman</span>
+                            <span class="tech-badge">Swagger / OpenAPI</span>
+                            <span class="tech-badge">IntelliJ IDEA</span>
+                            <span class="tech-badge">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div class="stack-row row align-items-center py-4 border-top border-bottom border-dark">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <h5 class="font-mono text-white fw-bold m-0"><i class="bi bi-shield-lock text-accent me-2"></i>Security</h5>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="d-flex flex-wrap gap-2 tech-badges">
+                            <span class="tech-badge">OWASP</span>
+                            <span class="tech-badge">CSRF Protection</span>
+                            <span class="tech-badge">Secure Headers</span>
+                            <span class="tech-badge">Secure API Endpoints</span>
+                            <span class="tech-badge">Encrypted Payloads</span>
+                            <span class="tech-badge">File Upload Security</span>
+                            <span class="tech-badge">OTP Security</span>
+                            <span class="tech-badge">Server Hardening</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tech Tooltip (Dynamic) -->
+            <div id="techTooltip" class="font-mono small text-accent mt-3 text-center" style="min-height: 20px;"></div>
+        </div>
+    </section>
+
+    <!-- 04 EXPERIENCE TIMELINE -->
+    <section id="experience" class="py-section bg-surface">
+        <div class="container">
+            <div class="section-tag font-mono text-accent mb-3 fade-in-up">03 // HISTORY</div>
+            <h2 class="display-6 fw-bold text-white mb-5 fade-in-up">EXPERIENCE TIMELINE</h2>
+            
+            <div class="engineering-timeline mt-5">
+                
+                <!-- I-Sourcing -->
+                <div class="timeline-entry row g-0 fade-in-up">
+                    <div class="col-md-3 timeline-date font-mono text-md-end pe-md-4 pb-3 pb-md-0 position-relative">
+                        <div class="text-white fw-bold">Sep 2023 – Present</div>
+                        <div class="text-muted small">Software Engineer</div>
+                        <div class="timeline-node"></div>
+                    </div>
+                    <div class="col-md-9 timeline-content ps-md-5 pb-5 border-start border-dark">
+                        <h4 class="text-accent font-mono mb-3">I-Sourcing Technologies Pvt. Ltd.</h4>
+                        <p class="text-muted mb-4">Leading enterprise full-stack application development, overseeing UAT and production environments, and implementing critical OWASP security improvements.</p>
+                        
+                        <div class="row gy-3 mb-4 font-mono small text-muted">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>Banking API integrations</li>
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>HRMS integrations</li>
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>Financial modules</li>
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>LDAP implementation</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>UAT / Production support</li>
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>NGINX deployments</li>
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>Critical issue resolution</li>
+                                    <li><i class="bi bi-check2 text-accent me-2"></i>Database query optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-base border border-dark text-muted">Java</span>
+                            <span class="badge bg-base border border-dark text-muted">Spring Boot</span>
+                            <span class="badge bg-base border border-dark text-muted">Microservices</span>
+                            <span class="badge bg-base border border-dark text-muted">REST APIs</span>
+                            <span class="badge bg-base border border-dark text-muted">Angular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- URTEQi -->
+                <div class="timeline-entry row g-0 fade-in-up">
+                    <div class="col-md-3 timeline-date font-mono text-md-end pe-md-4 pb-3 pb-md-0 position-relative">
+                        <div class="text-white fw-bold">Aug 2022 – Sep 2023</div>
+                        <div class="text-muted small">Java Developer</div>
+                        <div class="timeline-node"></div>
+                    </div>
+                    <div class="col-md-9 timeline-content ps-md-5 pb-5 border-start border-dark">
+                        <h4 class="text-accent font-mono mb-3">URTEQi Technologies</h4>
+                        <p class="text-muted mb-4">Focused on rigorous backend development, creating performant REST APIs, optimizing database operations, and ensuring comprehensive API documentation.</p>
+                        
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-base border border-dark text-muted">Spring Boot</span>
+                            <span class="badge bg-base border border-dark text-muted">Hibernate</span>
+                            <span class="badge bg-base border border-dark text-muted">MySQL</span>
+                            <span class="badge bg-base border border-dark text-muted">Swagger / OpenAPI</span>
+                            <span class="badge bg-base border border-dark text-muted">Debugging</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brilworks -->
+                <div class="timeline-entry row g-0 fade-in-up">
+                    <div class="col-md-3 timeline-date font-mono text-md-end pe-md-4 pb-3 pb-md-0 position-relative">
+                        <div class="text-white fw-bold">Jan 2022 – Jun 2022</div>
+                        <div class="text-muted small">Java Developer Intern</div>
+                        <div class="timeline-node end-node"></div>
+                    </div>
+                    <div class="col-md-9 timeline-content ps-md-5 border-start border-dark border-opacity-0">
+                        <h4 class="text-accent font-mono mb-3">Brilworks Software LLP</h4>
+                        <p class="text-muted mb-4">Gained foundational experience in backend development, database interaction, and application security within an agile team environment.</p>
+                        
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-base border border-dark text-muted">Java</span>
+                            <span class="badge bg-base border border-dark text-muted">Spring Boot</span>
+                            <span class="badge bg-base border border-dark text-muted">Spring Security</span>
+                            <span class="badge bg-base border border-dark text-muted">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 05 ENTERPRISE SYSTEMS (PROJECTS) -->
+    <section id="projects" class="py-section bg-base">
+        <div class="container">
+            <div class="section-tag font-mono text-accent mb-3 fade-in-up">04 // SYSTEMS</div>
+            <h2 class="display-6 fw-bold text-white mb-5 fade-in-up">ENTERPRISE SYSTEMS GALLERY</h2>
+            
+            <!-- Project 1: AI Tender -->
+            <div class="project-panel bg-surface border border-dark rounded mb-5 fade-in-up overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-xl-7 p-4 p-md-5 border-end border-dark d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-4 flex-wrap gap-3">
+                            <div class="badge bg-dark border border-secondary text-white font-mono rounded-0 px-3 py-2">
+                                <span class="status-indicator bg-warning me-2 blink-slow"></span>CONFIDENTIAL COMPANY PROJECT
+                            </div>
+                            <div class="font-mono text-muted small">PROJECT // 01</div>
+                        </div>
+                        
+                        <h3 class="fw-bold text-white mb-3">AI-Assisted Tender Creation & Evaluation Platform</h3>
+                        <p class="text-muted fs-5 mb-4">An enterprise AI-assisted platform designed to support tender creation using historical tender knowledge and to assist evaluation of bidder responses through document extraction, retrieval, requirement matching and evidence-based analysis.</p>
+                        
+                        <div class="mt-auto pt-4 border-top border-dark">
+                            <h6 class="font-mono text-accent small mb-3">ENGINEERING ARCHITECTURE</h6>
+                            <button class="btn btn-outline-light font-mono btn-sm px-4 py-2 open-arch-modal" data-target="tenderCreation">View Creation Flow <i class="bi bi-diagram-3 ms-2"></i></button>
+                            <button class="btn btn-outline-light font-mono btn-sm px-4 py-2 ms-2 open-arch-modal" data-target="tenderEval">View Evaluation Flow <i class="bi bi-diagram-3 ms-2"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 p-4 p-md-5 bg-darker d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="font-mono text-muted small mb-3">TECHNOLOGY STACK</h6>
+                            <div class="d-flex flex-wrap gap-2 mb-4 font-mono small text-white">
+                                <span class="px-2 py-1 border border-dark bg-surface">Java</span>
+                                <span class="px-2 py-1 border border-dark bg-surface">Spring Boot</span>
+                                <span class="px-2 py-1 border border-dark bg-surface text-accent">LLM</span>
+                                <span class="px-2 py-1 border border-dark bg-surface text-accent">RAG</span>
+                                <span class="px-2 py-1 border border-dark bg-surface">OCR</span>
+                                <span class="px-2 py-1 border border-dark bg-surface text-accent">Embeddings</span>
+                                <span class="px-2 py-1 border border-dark bg-surface text-warning">Qdrant</span>
+                                <span class="px-2 py-1 border border-dark bg-surface text-info">PostgreSQL</span>
+                            </div>
+                            
+                            <h6 class="font-mono text-muted small mb-3">LLM ABSTRACTION LAYER</h6>
+                            <div class="text-muted small font-mono p-3 border border-dark bg-surface mb-4">
+                                Provider-ready / configurable LLM architecture supporting OpenAI, Gemini, Claude, and Ollama via adapter patterns.
+                            </div>
+                            
+                            <h6 class="font-mono text-muted small mb-3">GENERATED STRUCTURE SUPPORT</h6>
+                            <div class="d-flex flex-wrap gap-1 text-muted small font-mono">
+                                <span>Overview,</span> <span>Scope,</span> <span>Eligibility,</span> <span>Tech Reqs,</span> <span>Commercials,</span> <span>Evaluation Criteria...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: IMPS -->
+            <div class="project-panel bg-surface border border-dark rounded mb-5 fade-in-up overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-xl-7 p-4 p-md-5 border-end border-dark d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div class="badge bg-dark border border-secondary text-white font-mono rounded-0 px-3 py-2">ENTERPRISE SYSTEM</div>
+                            <div class="font-mono text-muted small">PROJECT // 02</div>
+                        </div>
+                        
+                        <h3 class="fw-bold text-white mb-3">Integrated Project Management System</h3>
+                        <p class="text-muted fs-5 mb-4">A comprehensive microservices platform centralizing administration, budgeting, requisition handling, vendor management, and purchase order tracking.</p>
+                        
+                        <div class="mt-auto pt-4 border-top border-dark">
+                            <h6 class="font-mono text-accent small mb-3">SECURITY HIGHLIGHTS</h6>
+                            <div class="row g-2 font-mono small text-muted">
+                                <div class="col-6"><i class="bi bi-shield-check text-success me-2"></i>CSRF protection</div>
+                                <div class="col-6"><i class="bi bi-shield-check text-success me-2"></i>Secure headers</div>
+                                <div class="col-6"><i class="bi bi-shield-check text-success me-2"></i>Secure API endpoints</div>
+                                <div class="col-6"><i class="bi bi-shield-check text-success me-2"></i>Encrypted payloads</div>
+                                <div class="col-12"><i class="bi bi-shield-check text-success me-2"></i>Malicious file-upload prevention</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 p-4 p-md-5 bg-darker d-flex flex-column">
+                        <h6 class="font-mono text-muted small mb-3">TECHNOLOGY STACK</h6>
+                        <div class="d-flex flex-wrap gap-2 mb-4 font-mono small text-white">
+                            <span class="px-2 py-1 border border-dark bg-surface">Java</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">Spring Boot</span>
+                            <span class="px-2 py-1 border border-dark bg-surface text-accent">Microservices</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">Angular</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">TypeScript</span>
+                            <span class="px-2 py-1 border border-dark bg-surface text-warning">Oracle 19c</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">LDAP</span>
+                        </div>
+                        
+                        <h6 class="font-mono text-muted small mb-3">ENGINEERING IMPACT</h6>
+                        <ul class="list-unstyled text-muted small font-mono d-flex flex-column gap-2 mb-0">
+                            <li>● HRMS Integration</li>
+                            <li>● Database Optimization</li>
+                            <li>● UAT & Production Deployment</li>
+                            <li>● NGINX Configuration</li>
+                            <li>● Stakeholder Collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: SIIDCUL -->
+            <div class="project-panel bg-surface border border-dark rounded fade-in-up overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-xl-7 p-4 p-md-5 border-end border-dark d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div class="badge bg-dark border border-secondary text-white font-mono rounded-0 px-3 py-2">STATE PORTAL</div>
+                            <div class="font-mono text-muted small">PROJECT // 03</div>
+                        </div>
+                        
+                        <h3 class="fw-bold text-white mb-3">SIIDCUL Property Application & Bidding System</h3>
+                        <p class="text-muted fs-5 mb-4">A state-level portal streamlining property application workflows, bidding processes, and secure payment handling for infrastructure development.</p>
+                        
+                        <div class="mt-auto pt-4 border-top border-dark">
+                            <h6 class="font-mono text-accent small mb-3">INTERACTIVE WORKFLOW</h6>
+                            <div class="d-flex flex-wrap align-items-center gap-2 font-mono small text-muted">
+                                <span>User</span> <i class="bi bi-arrow-right text-accent"></i>
+                                <span>SSO</span> <i class="bi bi-arrow-right text-accent"></i>
+                                <span>Search</span> <i class="bi bi-arrow-right text-accent"></i>
+                                <span>Apply</span> <i class="bi bi-arrow-right text-accent"></i>
+                                <span>Payment</span> <i class="bi bi-arrow-right text-accent"></i>
+                                <span>Bidding</span> <i class="bi bi-arrow-right text-accent"></i>
+                                <span>Approval</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 p-4 p-md-5 bg-darker d-flex flex-column">
+                        <h6 class="font-mono text-muted small mb-3">KEY MODULES</h6>
+                        <div class="d-flex flex-wrap gap-2 mb-4 font-mono small text-white">
+                            <span class="px-2 py-1 border border-dark bg-surface text-accent">SSO</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">Property Mgmt</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">Bidding Engine</span>
+                            <span class="px-2 py-1 border border-dark bg-surface text-success">Payment Gateway</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">Role-based Access</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">Excel Bulk Ops</span>
+                            <span class="px-2 py-1 border border-dark bg-surface">Reporting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 06 SYSTEM THINKING (Architecture) -->
+    <section id="architecture" class="py-section bg-base border-top border-dark">
+        <div class="container">
+            <div class="section-tag font-mono text-accent mb-3 fade-in-up">05 // ARCHITECTURE</div>
+            <h2 class="display-6 fw-bold text-white mb-5 fade-in-up">SYSTEM THINKING</h2>
+            
+            <p class="fs-5 text-muted mb-5 fade-in-up max-w-800">
+                This is how I approach system design: visualizing the complete lifecycle of a request from client interaction through security boundaries, business logic, and database persistence.
+            </p>
+
+            <div class="architecture-map-container border border-dark bg-surface p-4 p-md-5 rounded fade-in-up position-relative overflow-hidden">
+                <div class="grid-bg"></div>
+                
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4 position-relative z-1">
+                    
+                    <div class="arch-col d-flex flex-column gap-4">
+                        <div class="arch-box interactive-node" data-title="CLIENT" data-desc="Web Application / External Consumers" data-tech="Angular, JavaScript, HTTP Clients">
+                            <i class="bi bi-laptop fs-3 mb-2 text-accent"></i>
+                            <div class="font-mono fw-bold">CLIENT</div>
+                        </div>
+                    </div>
+
+                    <div class="arch-arrow d-none d-lg-block"><i class="bi bi-arrow-right fs-4 text-muted"></i></div>
+                    <div class="arch-arrow d-lg-none"><i class="bi bi-arrow-down fs-4 text-muted"></i></div>
+
+                    <div class="arch-col d-flex flex-column gap-4">
+                        <div class="arch-box interactive-node" data-title="FRONTEND" data-desc="Presentation Layer and UI State" data-tech="Angular, Bootstrap, NGINX">
+                            <i class="bi bi-window fs-3 mb-2 text-accent"></i>
+                            <div class="font-mono fw-bold">FRONTEND</div>
+                        </div>
+                        <div class="arch-box interactive-node" data-title="DEPLOYMENT" data-desc="Reverse Proxy and Static Hosting" data-tech="NGINX, Linux">
+                            <i class="bi bi-server fs-3 mb-2 text-info"></i>
+                            <div class="font-mono fw-bold">DEPLOYMENT</div>
+                        </div>
+                    </div>
+
+                    <div class="arch-arrow d-none d-lg-block"><i class="bi bi-arrow-right fs-4 text-muted"></i></div>
+                    <div class="arch-arrow d-lg-none"><i class="bi bi-arrow-down fs-4 text-muted"></i></div>
+
+                    <div class="arch-col d-flex flex-column gap-4">
+                        <div class="arch-box interactive-node border-accent" data-title="REST API" data-desc="API Gateway and Controllers" data-tech="Spring Boot, REST, OpenAPI">
+                            <i class="bi bi-hdd-network fs-3 mb-2 text-accent"></i>
+                            <div class="font-mono fw-bold">REST API</div>
+                        </div>
+                        <div class="arch-box interactive-node border-danger" data-title="SECURITY" data-desc="Authentication, Authorization, Filters" data-tech="Spring Security, JWT, LDAP">
+                            <i class="bi bi-shield-lock fs-3 mb-2 text-danger"></i>
+                            <div class="font-mono fw-bold">SECURITY</div>
+                        </div>
+                    </div>
+
+                    <div class="arch-arrow d-none d-lg-block"><i class="bi bi-arrow-right fs-4 text-muted"></i></div>
+                    <div class="arch-arrow d-lg-none"><i class="bi bi-arrow-down fs-4 text-muted"></i></div>
+
+                    <div class="arch-col d-flex flex-column gap-4">
+                        <div class="arch-box interactive-node" data-title="BUSINESS SERVICES" data-desc="Core Application Logic & Microservices" data-tech="Java, Spring Core">
+                            <i class="bi bi-gear fs-3 mb-2 text-accent"></i>
+                            <div class="font-mono fw-bold">SERVICES</div>
+                        </div>
+                        <div class="arch-box interactive-node border-warning" data-title="INTEGRATIONS" data-desc="External APIs, Banking, HRMS" data-tech="HTTP Clients, Webhooks">
+                            <i class="bi bi-puzzle fs-3 mb-2 text-warning"></i>
+                            <div class="font-mono fw-bold">INTEGRATIONS</div>
+                        </div>
+                    </div>
+
+                    <div class="arch-arrow d-none d-lg-block"><i class="bi bi-arrow-right fs-4 text-muted"></i></div>
+                    <div class="arch-arrow d-lg-none"><i class="bi bi-arrow-down fs-4 text-muted"></i></div>
+
+                    <div class="arch-col d-flex flex-column gap-4">
+                        <div class="arch-box interactive-node border-success" data-title="DATABASE" data-desc="Data Persistence and Retrieval" data-tech="MySQL, Oracle, PostgreSQL, Hibernate">
+                            <i class="bi bi-database fs-3 mb-2 text-success"></i>
+                            <div class="font-mono fw-bold">DATABASE</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Architecture Info Panel -->
+                <div class="arch-detail-panel mt-5 pt-4 border-top border-dark d-none font-mono">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 text-accent fw-bold fs-5" id="archTitle">NODE</div>
+                        <div class="col-md-5 text-white" id="archDesc">Description</div>
+                        <div class="col-md-4 text-muted small" id="archTech">Tech</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIVE REQUEST FLOW -->
+            <div class="mt-5 pt-5 fade-in-up">
+                <h4 class="font-mono text-white mb-4">LIVE REQUEST FLOW SIMULATION</h4>
+                <div class="bg-darker border border-dark rounded p-4 p-md-5 position-relative overflow-hidden">
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                        <button class="btn btn-accent font-mono btn-sm px-4 fw-bold" id="startRequestFlow">START REQUEST FLOW <i class="bi bi-play-fill"></i></button>
+                        <div class="font-mono small text-muted" id="flowStatus">SYSTEM IDLE</div>
+                    </div>
+                    
+                    <!-- SVG Flow Path -->
+                    <div class="flow-svg-container position-relative py-4">
+                        <svg width="100%" height="60" class="flow-svg">
+                            <line x1="0" y1="30" x2="100%" y2="30" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-dasharray="5,5" />
+                            <circle id="flowPacket" cx="0" cy="30" r="6" fill="#00E5FF" class="d-none shadow-glow" />
+                        </svg>
+                        
+                        <div class="d-flex justify-content-between position-absolute w-100 top-50 translate-middle-y font-mono small text-muted fw-bold px-2">
+                            <div class="flow-stop text-center" id="fs-client"><i class="bi bi-laptop fs-4 mb-2 d-block"></i>CLIENT</div>
+                            <div class="flow-stop text-center" id="fs-nginx"><i class="bi bi-router fs-4 mb-2 d-block"></i>NGINX</div>
+                            <div class="flow-stop text-center" id="fs-auth"><i class="bi bi-shield-lock fs-4 mb-2 d-block"></i>AUTH</div>
+                            <div class="flow-stop text-center" id="fs-ctrl"><i class="bi bi-cpu fs-4 mb-2 d-block"></i>CONTROLLER</div>
+                            <div class="flow-stop text-center" id="fs-db"><i class="bi bi-database fs-4 mb-2 d-block"></i>DATABASE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 07 SECURITY -->
+    <section id="security" class="py-section bg-surface border-top border-dark">
+        <div class="container">
+            <div class="section-tag font-mono text-accent mb-3 fade-in-up">06 // SECURITY</div>
+            <h2 class="display-6 fw-bold text-white mb-5 fade-in-up">SECURITY IS PART OF THE ARCHITECTURE</h2>
+            
+            <div class="row g-4 fade-in-up">
+                <div class="col-md-6 col-lg-4">
+                    <div class="security-card p-4 border border-dark bg-base h-100 rounded">
+                        <i class="bi bi-shield-check fs-1 text-success mb-3"></i>
+                        <h5 class="font-mono text-white fw-bold">CSRF Protection</h5>
+                        <p class="text-muted small mb-0">Protecting state-changing requests against cross-site request forgery attacks within Spring Security.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="security-card p-4 border border-dark bg-base h-100 rounded">
+                        <i class="bi bi-braces-asterisk fs-1 text-accent mb-3"></i>
+                        <h5 class="font-mono text-white fw-bold">Secure Headers</h5>
+                        <p class="text-muted small mb-0">Reducing common browser-based attack surfaces via rigorous HTTP header configuration.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="security-card p-4 border border-dark bg-base h-100 rounded">
+                        <i class="bi bi-door-closed fs-1 text-danger mb-3"></i>
+                        <h5 class="font-mono text-white fw-bold">Secure API Endpoints</h5>
+                        <p class="text-muted small mb-0">Applying strict authentication (JWT/LDAP) and role-based authorization controls across microservices.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="security-card p-4 border border-dark bg-base h-100 rounded">
+                        <i class="bi bi-file-earmark-lock fs-1 text-warning mb-3"></i>
+                        <h5 class="font-mono text-white fw-bold">Encrypted Payloads</h5>
+                        <p class="text-muted small mb-0">Protecting sensitive application data during client-server communication.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="security-card p-4 border border-dark bg-base h-100 rounded">
+                        <i class="bi bi-file-earmark-x fs-1 text-info mb-3"></i>
+                        <h5 class="font-mono text-white fw-bold">File Upload Prevention</h5>
+                        <p class="text-muted small mb-0">Reducing risks associated with untrusted uploaded content through validation and sandboxing.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="security-card p-4 border border-dark bg-base h-100 rounded">
+                        <i class="bi bi-hdd-network fs-1 text-secondary mb-3"></i>
+                        <h5 class="font-mono text-white fw-bold">Server Hardening</h5>
+                        <p class="text-muted small mb-0">Reducing unnecessary server information exposure on NGINX and Tomcat deployments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 08 PRODUCTION PIPELINE & OPERATIONS -->
+    <section class="py-section bg-base border-top border-dark">
+        <div class="container">
+            <div class="row gy-5">
+                <!-- Pipeline -->
+                <div class="col-lg-7 fade-in-left">
+                    <div class="section-tag font-mono text-accent mb-3">07 // DEPLOYMENT</div>
+                    <h2 class="display-6 fw-bold text-white mb-5">PRODUCTION PIPELINE</h2>
+                    
+                    <div class="pipeline-container d-flex flex-column gap-3">
+                        <div class="pipeline-stage bg-surface border border-dark p-3 rounded d-flex align-items-center cursor-pointer" data-detail="Version control and collaborative development.">
+                            <div class="stage-icon bg-darker text-white p-2 rounded me-3"><i class="bi bi-git"></i></div>
+                            <div class="font-mono fw-bold text-white flex-grow-1">GIT</div>
+                            <i class="bi bi-chevron-right text-muted"></i>
+                        </div>
+                        <div class="pipeline-stage bg-surface border border-dark p-3 rounded d-flex align-items-center cursor-pointer" data-detail="Build and dependency management via Maven.">
+                            <div class="stage-icon bg-darker text-white p-2 rounded me-3"><i class="bi bi-hammer"></i></div>
+                            <div class="font-mono fw-bold text-white flex-grow-1">MAVEN BUILD</div>
+                            <i class="bi bi-chevron-right text-muted"></i>
+                        </div>
+                        <div class="pipeline-stage bg-surface border border-accent p-3 rounded d-flex align-items-center cursor-pointer shadow-glow" data-detail="Validation before production release with stakeholders.">
+                            <div class="stage-icon bg-accent text-base p-2 rounded me-3"><i class="bi bi-clipboard-check"></i></div>
+                            <div class="font-mono fw-bold text-white flex-grow-1">UAT</div>
+                            <i class="bi bi-chevron-right text-muted"></i>
+                        </div>
+                        <div class="pipeline-stage bg-surface border border-dark p-3 rounded d-flex align-items-center cursor-pointer" data-detail="Deployment / reverse proxy environment setup.">
+                            <div class="stage-icon bg-darker text-white p-2 rounded me-3"><i class="bi bi-router"></i></div>
+                            <div class="font-mono fw-bold text-white flex-grow-1">NGINX</div>
+                            <i class="bi bi-chevron-right text-muted"></i>
+                        </div>
+                        <div class="pipeline-stage bg-surface border border-success p-3 rounded d-flex align-items-center cursor-pointer" data-detail="Release, monitoring, and production support.">
+                            <div class="stage-icon bg-success text-white p-2 rounded me-3"><i class="bi bi-cloud-check"></i></div>
+                            <div class="font-mono fw-bold text-white flex-grow-1">PRODUCTION</div>
+                            <i class="bi bi-chevron-right text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="pipeline-detail mt-4 font-mono small text-accent" style="min-height: 20px;"></div>
+                </div>
+                
+                <!-- Operations -->
+                <div class="col-lg-5 fade-in-right">
+                    <div class="section-tag font-mono text-accent mb-3">08 // TELEMETRY</div>
+                    <h2 class="display-6 fw-bold text-white mb-5">OPERATIONS PANEL</h2>
+                    
+                    <div class="dashboard-panel bg-surface border border-dark rounded p-4 font-mono">
+                        <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-4">
+                            <span class="text-muted small">Engineering Workflow Visualization</span>
+                            <i class="bi bi-activity text-accent"></i>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-white">API STATUS</span>
+                            <span class="text-success blink-slow">ONLINE</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-white">DATABASE</span>
+                            <span class="text-success">CONNECTED</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-white">SECURITY</span>
+                            <span class="text-accent">ACTIVE</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-white">DEPLOYMENT</span>
+                            <span class="text-success">READY</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-white">PRODUCTION</span>
+                            <span class="text-info">MONITORED</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 09 ENGINEERING NOTES & PRINCIPLES -->
+    <section class="py-section bg-surface border-top border-dark">
+        <div class="container">
+            <div class="row gy-5">
+                <!-- Principles -->
+                <div class="col-lg-6 fade-in-up">
+                    <h3 class="font-mono text-white fw-bold mb-5">ENGINEERING PRINCIPLES</h3>
+                    
+                    <div class="d-flex flex-column gap-4">
+                        <div>
+                            <h5 class="text-accent font-mono fs-6 mb-2">BUILD FOR SCALE</h5>
+                            <p class="text-muted small mb-0">Design systems that can evolve without monolithic constraints.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-accent font-mono fs-6 mb-2">SECURITY BY DESIGN</h5>
+                            <p class="text-muted small mb-0">Security should be part of architecture, not an afterthought.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-accent font-mono fs-6 mb-2">AUTOMATE REPETITIVE WORK</h5>
+                            <p class="text-muted small mb-0">Use tools and automation to reduce human error where appropriate.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-accent font-mono fs-6 mb-2">OBSERVE PRODUCTION</h5>
+                            <p class="text-muted small mb-0">Understand how systems behave beyond local development environments.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-accent font-mono fs-6 mb-2">KEEP SYSTEMS MAINTAINABLE</h5>
+                            <p class="text-muted small mb-0">Readable architecture and clean code matter for long-term velocity.</p>
+                        </div>
+                        <div>
+                            <h5 class="text-accent font-mono fs-6 mb-2">SOLVE BUSINESS PROBLEMS</h5>
+                            <p class="text-muted small mb-0">Technology should support and accelerate real business workflows.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Notes -->
+                <div class="col-lg-6 fade-in-up delay-1">
+                    <h3 class="font-mono text-white fw-bold mb-5">ENGINEERING NOTES</h3>
+                    
+                    <div class="bg-base border border-dark rounded p-4 font-mono text-muted small d-flex flex-column gap-4">
+                        <div>
+                            <span class="text-accent d-block mb-1">01 / SECURITY</span>
+                            Secure APIs are not just about authentication. They require thoughtful request handling, validation, authorization and defensive design.
+                        </div>
+                        <div class="border-top border-dark pt-4">
+                            <span class="text-accent d-block mb-1">02 / BACKEND</span>
+                            Good backend architecture separates business logic, persistence and integration concerns, making testing and scaling isolated.
+                        </div>
+                        <div class="border-top border-dark pt-4">
+                            <span class="text-accent d-block mb-1">03 / PRODUCTION</span>
+                            A feature is not finished when it works locally. Deployment, monitoring, logging and production support matter just as much.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10 RESUME & CONTACT -->
+    <section id="contact" class="py-section bg-base border-top border-dark position-relative overflow-hidden">
+        <div class="engineering-bg opacity-50"></div>
+        <div class="container position-relative z-1 text-center">
+            
+            <!-- Resume CTA -->
+            <div class="mb-5 pb-5 border-bottom border-dark fade-in-up">
+                <h2 class="display-3 fw-bolder text-white mb-4">LET'S BUILD<br>SOMETHING USEFUL.</h2>
+                <p class="fs-5 text-muted mb-5 max-w-800 mx-auto">
+                    Interested in backend engineering, full-stack development, enterprise applications or secure system design?
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 font-mono">
+                    <a href="assets/resume/resume.pdf" target="_blank" class="btn btn-accent px-5 py-3 fw-bold btn-hover-lift">DOWNLOAD RESUME</a>
+                    <a href="#contact-info" class="btn btn-outline-light px-5 py-3 fw-bold btn-hover-lift scroll-to">CONTACT ME</a>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div id="contact-info" class="row justify-content-center fade-in-up">
+                <div class="col-md-8 col-lg-6">
+                    <div class="bg-surface border border-dark rounded p-5">
+                        <h4 class="font-mono text-white fw-bold mb-2">NITEEN BAPODRA</h4>
+                        <p class="text-accent font-mono small mb-5">JAVA FULL STACK DEVELOPER</p>
+                        
+                        <div class="d-flex flex-column gap-4 font-mono fs-6 text-start">
+                            <a href="mailto:bapodranitin6@gmail.com" class="text-decoration-none text-muted d-flex align-items-center hover-white">
+                                <i class="bi bi-envelope fs-4 me-4 text-accent"></i>
+                                bapodranitin6@gmail.com
+                            </a>
+                            <a href="https://linkedin.com/in/niteen-bapodra-623ab119/" target="_blank" class="text-decoration-none text-muted d-flex align-items-center hover-white">
+                                <i class="bi bi-linkedin fs-4 me-4 text-accent"></i>
+                                linkedin.com/in/niteen-bapodra-623ab119/
+                            </a>
+                            <a href="https://github.com/" target="_blank" class="text-decoration-none text-muted d-flex align-items-center hover-white">
+                                <i class="bi bi-github fs-4 me-4 text-accent"></i>
+                                github.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-surface border-top border-dark pt-5 pb-4 position-relative">
+        <div class="footer-top-border"></div>
+        <div class="container">
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-4">
+                    <h5 class="text-white font-mono fw-bold mb-2">NITEEN BAPODRA</h5>
+                    <div class="text-accent font-mono small mb-3">JAVA FULL STACK DEVELOPER</div>
+                    <p class="text-muted small pe-md-4">
+                        Building enterprise applications, secure APIs and scalable backend systems.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h6 class="text-white font-mono mb-3">NAVIGATION</h6>
+                    <div class="row font-mono small text-muted g-2">
+                        <div class="col-6"><a href="#home" class="text-decoration-none text-muted hover-accent">Home</a></div>
+                        <div class="col-6"><a href="#projects" class="text-decoration-none text-muted hover-accent">Projects</a></div>
+                        <div class="col-6"><a href="#profile" class="text-decoration-none text-muted hover-accent">About</a></div>
+                        <div class="col-6"><a href="#architecture" class="text-decoration-none text-muted hover-accent">Architecture</a></div>
+                        <div class="col-6"><a href="#stack" class="text-decoration-none text-muted hover-accent">Skills</a></div>
+                        <div class="col-6"><a href="#security" class="text-decoration-none text-muted hover-accent">Security</a></div>
+                        <div class="col-6"><a href="#experience" class="text-decoration-none text-muted hover-accent">Experience</a></div>
+                        <div class="col-6"><a href="#contact" class="text-decoration-none text-muted hover-accent">Contact</a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h6 class="text-white font-mono mb-3">CONNECT</h6>
+                    <div class="d-flex flex-column gap-2 font-mono small">
+                        <a href="https://linkedin.com/in/niteen-bapodra-623ab119/" class="text-decoration-none text-muted hover-accent"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                        <a href="https://github.com/" class="text-decoration-none text-muted hover-accent"><i class="bi bi-github me-2"></i>GitHub</a>
+                        <a href="mailto:bapodranitin6@gmail.com" class="text-decoration-none text-muted hover-accent"><i class="bi bi-envelope me-2"></i>Email</a>
+                        <a href="assets/resume/resume.pdf" class="text-decoration-none text-muted hover-accent"><i class="bi bi-file-earmark-text me-2"></i>Resume</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-top border-dark pt-4 font-mono small text-muted d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="mb-2 mb-md-0">&copy; 2026 Niteen Bapodra. All rights reserved.</div>
+                <div>Built with HTML5 • CSS3 • Bootstrap 5 • jQuery • JavaScript</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Tender Architecture Modal -->
+    <div class="modal fade" id="archModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-base border border-dark rounded-0">
+                <div class="modal-header border-bottom border-dark bg-surface">
+                    <h5 class="modal-title font-mono text-white" id="archModalTitle">ARCHITECTURE VISUALIZATION</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <div id="archModalContent" class="d-flex flex-column align-items-center gap-3">
+                        <!-- Content injected via jQuery -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery & Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

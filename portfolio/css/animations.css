@@ -1,0 +1,63 @@
+/* ENGINEERING OS Animations */
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.blink {
+    animation: blink 1.5s infinite step-start;
+}
+
+/* Scroll Reveals */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Timeline transitions */
+.timeline-panel .bi-plus-lg {
+    transition: transform 0.3s;
+}
+
+.timeline-panel[aria-expanded="true"] .bi-plus-lg {
+    transform: rotate(45deg);
+    color: var(--accent) !important;
+}
+
+/* Modal transitions */
+.modal.fade .modal-dialog {
+    transform: translateY(100px);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
